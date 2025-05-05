@@ -128,14 +128,14 @@ for T in range(NS):
 # Pesos de muerte elegidos para obtener una supervivencia del .55 de las crías
 # en promedio al llegar a los 2.5 meses
 
-                for n in range(N):
-                    G = random.choice(['M', 'F'])       # Equiprobabilidad de género                   
-                    if G == 'F':
-                        graphF[max(list(graphF)) + 1] = {'G': G, 'A': 2.5, 'O': 'K', 'E': [], 'RC': 0, 'P': 0, 'L': 0}
-                        FF = FF + 1
-                    else:
-                        graphM[max(list(graphM)) + 1] = {'G': G, 'A': 2.5, 'O': 'K', 'E': [], 'D': 0}
-                        MM = MM + 1
+                    for n in range(N):
+                        G = random.choice(['M', 'F'])       # Equiprobabilidad de género                   
+                        if G == 'F':
+                            graphF[max(list(graphF)) + 1] = {'G': G, 'A': 2.5, 'O': 'K', 'E': [], 'RC': 0, 'P': 0, 'L': 0}
+                            FF = FF + 1
+                        else:
+                            graphM[max(list(graphM)) + 1] = {'G': G, 'A': 2.5, 'O': 'K', 'E': [], 'D': 0}
+                            MM = MM + 1
  
                 
 # Simulación de las interacciones (sexuales) entre machos y hembras. Estos encuentros
