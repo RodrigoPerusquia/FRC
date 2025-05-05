@@ -117,14 +117,14 @@ for T in range(NS):
                     N = np.random.choice([3, 4, 5, 6], p = [.6, .25, .1, .05])
 # Pesos elegidos para obtener una media de 3.2 crías por camada
 
-                if N==3:
-                    N = N - np.random.choice([0, 1, 2, 3], p = [.2, .4, .3, .1])
-                elif(N==4):
-                    N = N - np.random.choice([0, 1, 2, 3, 4], p = [.15, .3, .25, .2, .1])
-                elif(N==5):
-                    N = N - np.random.choice([0, 1, 2, 3, 4], p = [.1, .2, .3, .25, .15])
-                else:
-                    N = N - np.random.choice([1, 2, 3, 4, 5], p = [.15, .3, .25, .2, .1])
+                    if N==3:
+                        N = N - np.random.choice([0, 1, 2, 3], p = [.2, .4, .3, .1])
+                    elif(N==4):
+                        N = N - np.random.choice([0, 1, 2, 3, 4], p = [.15, .3, .25, .2, .1])
+                    elif(N==5):
+                        N = N - np.random.choice([0, 1, 2, 3, 4], p = [.1, .2, .3, .25, .15])
+                    else:
+                        N = N - np.random.choice([1, 2, 3, 4, 5], p = [.15, .3, .25, .2, .1])
 # Pesos de muerte elegidos para obtener una supervivencia del .55 de las crías
 # en promedio al llegar a los 2.5 meses
 
