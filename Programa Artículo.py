@@ -567,7 +567,7 @@ for T in range(NS):
 # Remoción por muerte natural sujeta a capacidad de carga de la población y
 # a supervivencias de cada individuo por edad.
 
-            D = max(1, int((MM + FF)/(HS/2)))                   # Tasa de muerte propuesta (se puede ajustar)
+            D = max(1, (int((MM + FF)/(HS/2)))**2)                   # Tasa de muerte propuesta (se puede ajustar)
                 
 # Se propone una cota de supervivencia de todos los individuos de la red con los 
 # datos hallados en la literatura.
